@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — [Your Name] | Portfolio</title>
+  <meta name="description" content="Services by [Your Name]: web development, responsive design, backend and APIs." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body class="light">
+
+  <div class="loading-pag">
+    <div class="loader">
+      <span>=[SERVICES]=></span>
+      <span>=[SERVICES]=></span>
+    </div>
+  </div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">=([Your<span>Name</span>])=&gt;</a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html" class="nav-proj">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <button id="darkMode" aria-label="Toggle dark mode"><span><i class="fas fa-moon"></i><i class="fas fa-sun"></i></span></button>
+      <i class="fas fa-bars" id="menu-btn"></i>
+    </div>
+  </header>
+
+  <main class="service-page">
+    <!-- Pricing-style service cards (exact original site-services layout) -->
+    <section class="site-services">
+      <h2 class="heading">My <span style="color:var(--green)">Services</span></h2>
+      <div class="row">
+        <div class="columns">
+          <div class="numero"><span>$</span>15<span>0+</span></div>
+          <h3>Landing Page</h3>
+          <p class="sub-title">Perfect for a personal start</p>
+          <ul class="ul-cards-services">
+            <li><i class="fas fa-check"></i>1 page responsive site</li>
+            <li><i class="fas fa-check"></i>Modern clean design</li>
+            <li><i class="fas fa-check"></i>Contact / social links</li>
+            <li><i class="fas fa-check"></i>1 revision round</li>
+            <li><i class="fas fa-check"></i>Delivery in ~1 week</li>
+          </ul>
+          <a href="contact.html" class="btn custom-btn">Hire Me</a>
+        </div>
+
+        <div class="columns recomendado">
+          <div class="numero"><span>$</span>50<span>0+</span></div>
+          <h3>Full Website</h3>
+          <p class="sub-title">Recommended — complete product</p>
+          <ul class="ul-cards-services">
+            <li><i class="fas fa-check"></i>Up to 6-8 pages</li>
+            <li><i class="fas fa-check"></i>Custom design system</li>
+            <li><i class="fas fa-check"></i>Admin panel / CMS</li>
+            <li><i class="fas fa-check"></i>SEO optimisation</li>
+            <li><i class="fas fa-check"></i>3 revision rounds</li>
+            <li><i class="fas fa-check"></i>Delivery in ~3 weeks</li>
+          </ul>
+          <a href="contact.html" class="btn custom-btn">Hire Me</a>
+        </div>
+
+        <div class="columns">
+          <div class="numero"><span>$</span>25<span>/hr</span></div>
+          <h3>Maintenance</h3>
+          <p class="sub-title">Ongoing support & features</p>
+          <ul class="ul-cards-services">
+            <li><i class="fas fa-check"></i>Bug fixes & updates</li>
+            <li><i class="fas fa-check"></i>New feature builds</li>
+            <li><i class="fas fa-check"></i>Performance audits</li>
+            <li><i class="fas fa-check"></i>Flexible hours</li>
+            <li><i class="fas fa-check"></i>Priority response</li>
+          </ul>
+          <a href="contact.html" class="btn custom-btn">Hire Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- General service cards (hover-invert, exact original) -->
+    <section class="servicios">
+      <h2 class="heading">What <span style="color:var(--green)">I Do</span></h2>
+      <div class="row">
+        <div class="columns">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Complete websites and web apps with modern stacks — fast, secure and maintainable.</p>
+        </div>
+        <div class="columns">
+          <i class="fas fa-mobile-screen"></i>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layouts that look great on phones, tablets and desktops.</p>
+        </div>
+        <div class="columns">
+          <i class="fas fa-database"></i>
+          <h3>Backend & APIs</h3>
+          <p>REST APIs, databases, auth and third-party integrations done right.</p>
+        </div>
+        <div class="columns">
+          <i class="fas fa-palette"></i>
+          <h3>UI Implementation</h3>
+          <p>Pixel-perfect builds from Figma designs, with clean reusable components.</p>
+        </div>
+        <div class="columns">
+          <i class="fas fa-rocket"></i>
+          <h3>Deployment</h3>
+          <p>CI/CD, hosting and domain setup — your site live and stable on the internet.</p>
+        </div>
+        <div class="columns">
+          <i class="fas fa-headset"></i>
+          <h3>Support</h3>
+          <p>Clear communication, documented handover and support after delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ accordion (exact original preguntas layout) -->
+    <section class="preguntas">
+      <h2 class="heading">Frequently Asked <span style="color:var(--green)">Questions</span></h2>
+      <div class="accordion-container">
+        <div class="accordion active">
+          <div class="accordion-heading">
+            <h3>How long does a project take?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <p class="accordioin-content">
+            A landing page takes about a week, a full website 2-4 weeks depending on features.
+            I'll give you a clear timeline after our first call — and I stick to it.
+          </p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>What do you need from me to start?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <p class="accordioin-content">
+            Just your idea and any references you like. If you have a logo, brand colors or
+            content ready — great. If not, I can help you create them.
+          </p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>Do you work remotely?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <p class="accordioin-content">
+            Yes, 100% remote. I've worked with clients in different time zones and I keep
+            communication clear with regular progress updates.
+          </p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>Do you provide support after delivery?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <p class="accordioin-content">
+            Yes — every project includes a free support window for bug fixes. After that,
+            you can hire me on the maintenance plan for ongoing updates and features.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="site-footer">
+      <div class="copyright">
+        <p>© <span class="year"></span> [Your Name] — All rights reserved.</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://github.com/[your-username]" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/[your-username]" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/[your-username]" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/[your-username]" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cm-up">
+    <div class="cm-icon"><i class="fas fa-arrow-up"></i></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

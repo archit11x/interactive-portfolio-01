@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[ARCHIT MISHRA] | Portfolio</title>
+  <meta name="description" content="Portfolio of [Your Name] — Full-Stack Developer. Web apps, services and projects." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>" />
+</head>
+<body class="light">
+
+  <!-- Loading screen -->
+  <div class="loading-pag">
+    <div class="loader">
+      <span>=[ARCHIT MISHRA]=></span>
+      <span>=[ARCHIT MISHRA]=></span>
+    </div>
+  </div>
+
+  <!-- Particles bg -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="logo">=([Your<span>Name</span>])=&gt;</a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="nav-proj">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <button id="darkMode" aria-label="Toggle dark mode"><span><i class="fas fa-moon"></i><i class="fas fa-sun"></i></span></button>
+      <i class="fas fa-bars" id="menu-btn"></i>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero (exact original: black cover, centered title, expandable socials) -->
+    <div class="contenido" id="inicio">
+      <div class="inicio">
+        <div class="titulo">
+          <p>Hi, I'm</p>
+          <h1>[ARCHIT MISHRA]</h1>
+          <div class="wrapper">
+            <a class="button" href="https://linkedin.com/in/[your-username]" target="_blank">
+              <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+              <span>Linkedin</span>
+            </a>
+            <a class="button" href="https://github.com/[your-username]" target="_blank">
+              <div class="icon"><i class="fab fa-github"></i></div>
+              <span>Github</span>
+            </a>
+            <a class="button" href="https://instagram.com/[your-username]" target="_blank">
+              <div class="icon"><i class="fab fa-instagram"></i></div>
+              <span>Instagram</span>
+            </a>
+            <a class="button" href="https://wa.me/[your-number]" target="_blank">
+              <div class="icon"><i class="fab fa-whatsapp"></i></div>
+              <span>Whatsapp</span>
+            </a>
+          </div>
+          <div class="redes-sociales">
+            <a href="https://linkedin.com/in/[your-username]" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/[your-username]" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/[your-username]" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/[your-number]" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down" onclick="document.getElementById('sobre-mi').scrollIntoView({behavior:'smooth'})"></div>
+    </div>
+
+    <!-- ======== About section ======== -->
+    <section class="sobre-mi" id="sobre-mi">
+      <h2 class="heading">About <span style="color:var(--green)">Me</span></h2>
+      <div class="row">
+        <div class="columns">
+          <h3>Profile</h3>
+          <h4>[Your Name]</h4>
+          <ul>
+            <li><p><span>Age:</span> [25]</p></li>
+            <li><p><span>Hobbies:</span> [Chess, Football and Programming]</p></li>
+            <li><p><span>Email:</span> [your-email]@gmail.com</p></li>
+            <li><p><span>City:</span> [Your City, Country]</p></li>
+          </ul>
+          <div class="mas-info">
+            <a href="about.html" class="btn custom-btn mas-info-btn">More About Me</a>
+          </div>
+        </div>
+
+        <div class="columns">
+          <h3>About</h3>
+          <h4>[Your Tagline — e.g. Full-Stack Developer]</h4>
+          <p>
+            I'm a developer who loves building clean, fast and useful products for the web.
+            I work across the full stack — from pixel-perfect interfaces to APIs and databases —
+            and I enjoy turning ideas into real, shipped software.
+          </p>
+          <p>
+            Replace this text with your own bio. Add your experience, what you specialise in,
+            and what drives you as a developer. Keep it short, honest and human.
+          </p>
+          <div class="mas-info">
+            <a href="projects.html" class="btn custom-btn mas-info-btn">See Projects</a>
+            <a href="contact.html" class="btn-codigo custom-btn mas-info-btn">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="columns col-skill">
+          <h3>Skills</h3>
+          <h4>Front-End</h4>
+          <div class="skill">
+            <div><i class="fab fa-html5 icons-skils ic-html"></i><h5>HTML</h5></div>
+            <div><i class="fab fa-css3-alt icons-skils ic-css"></i><h5>CSS</h5></div>
+            <div><i class="fab fa-js icons-skils ic-js"></i><h5>JavaScript</h5></div>
+            <div><i class="fab fa-sass icons-skils ic-sass"></i><h5>Sass</h5></div>
+            <div><i class="fab fa-bootstrap icons-skils ic-bootstrap"></i><h5>Bootstrap</h5></div>
+            <div><i class="fab fa-react icons-skils ic-react"></i><h5>React</h5></div>
+            <div><i class="fas fa-file-code icons-skils ic-ts"></i><h5>TypeScript</h5></div>
+          </div>
+          <h4>Back-End</h4>
+          <div class="skill">
+            <div><i class="fab fa-node-js icons-skils ic-node"></i><h5>NodeJs</h5></div>
+            <div><i class="fas fa-server icons-skils ic-express"></i><h5>Express</h5></div>
+            <div><i class="fab fa-php icons-skils ic-php"></i><h5>PHP</h5></div>
+            <div><i class="fab fa-laravel icons-skils ic-laravel"></i><h5>Laravel</h5></div>
+            <div><i class="fas fa-database icons-skils ic-mysql"></i><h5>MySQL</h5></div>
+            <div><i class="fas fa-database icons-skils ic-postgres"></i><h5>PostgreSQL</h5></div>
+            <div><i class="fas fa-leaf icons-skils ic-mongo"></i><h5>MongoDB</h5></div>
+          </div>
+          <h4>Tools</h4>
+          <div class="skill">
+            <div><i class="fab fa-figma icons-skils ic-figma"></i><h5>Figma</h5></div>
+            <div><i class="fas fa-palette icons-skils ic-photoshop"></i><h5>Photoshop</h5></div>
+            <div><i class="fas fa-code icons-skils ic-vscode"></i><h5>VS Code</h5></div>
+            <div><i class="fab fa-git-alt icons-skils ic-git"></i><h5>Git</h5></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== Services section ======== -->
+    <section class="servicios" id="servicios">
+      <h2 class="heading">My <span style="color:var(--green)">Services</span></h2>
+      <div class="row">
+        <div class="columns">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Complete, responsive and optimised websites — landing pages, portfolios, business sites and web apps built with modern stacks.</p>
+        </div>
+        <div class="columns">
+          <i class="fas fa-mobile-screen"></i>
+          <h3>Responsive Design</h3>
+          <p>Interfaces that look and work beautifully on every device — mobile-first layouts, clean components, accessibility built in.</p>
+        </div>
+        <div class="columns">
+          <i class="fas fa-database"></i>
+          <h3>Backend & APIs</h3>
+          <p>REST APIs, authentication, databases and integrations — the engine behind your product, secure and ready to scale.</p>
+        </div>
+      </div>
+      <div class="portafolio-btn">
+        <a href="services.html" class="btn custom-btn">See All Services</a>
+      </div>
+    </section>
+
+    <!-- ======== Projects slider section ======== -->
+    <section class="proyectos" id="proyectos">
+      <h2 class="heading">My <span style="color:var(--green)">Projects</span></h2>
+      <div class="proyect-site">
+        <div class="swiper proyectos-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-cart-shopping"></i></div>
+                <div class="content">
+                  <h3>E-Commerce Platform</h3>
+                  <p><span>▸</span> MERN store with cart, payments and admin panel.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-react ic-react"></i>
+                    <i class="fab fa-node-js ic-node"></i>
+                    <i class="fas fa-leaf ic-mongo"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-chart-line"></i></div>
+                <div class="content">
+                  <h3>Analytics Dashboard</h3>
+                  <p><span>▸</span> Realtime SaaS dashboard with charts and exports.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-react ic-react"></i>
+                    <i class="fab fa-js ic-js"></i>
+                    <i class="fas fa-database ic-mysql"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-comments"></i></div>
+                <div class="content">
+                  <h3>Chat Application</h3>
+                  <p><span>▸</span> Realtime chat with rooms, files and presence.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-react ic-react"></i>
+                    <i class="fab fa-node-js ic-node"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-gamepad"></i></div>
+                <div class="content">
+                  <h3>Snake Game</h3>
+                  <p><span>▸</span> Classic snake with power-ups and high scores.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-js ic-js"></i>
+                    <i class="fab fa-html5 ic-html"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="portafolio-btn">
+        <a href="projects.html" class="btn custom-btn">More Projects</a>
+      </div>
+    </section>
+
+    <!-- ======== Contact section ======== -->
+    <section class="contactos" id="contactos">
+      <h2 class="heading">Contact<span style="color:var(--green)">Me</span></h2>
+      <p class="titulo">You can reach me at
+        <a class="site-contacto" href="mailto:[your-email]@gmail.com">[your-email]@gmail.com</a>
+      </p>
+      <div class="icons">
+        <a href="mailto:[your-email]@gmail.com" target="_blank">
+          <div class="layer"><span></span><span></span><span></span><span></span><span class="fas fa-envelope"></span></div>
+          <div class="text">Gmail</div>
+        </a>
+        <a href="https://wa.me/[your-number]" target="_blank">
+          <div class="layer"><span></span><span></span><span></span><span></span><span class="fab fa-whatsapp"></span></div>
+          <div class="text">Whatsapp</div>
+        </a>
+        <a href="https://instagram.com/[your-username]" target="_blank">
+          <div class="layer"><span></span><span></span><span></span><span></span><span class="fab fa-instagram"></span></div>
+          <div class="text">Instagram</div>
+        </a>
+        <a href="https://twitter.com/[your-username]" target="_blank">
+          <div class="layer"><span></span><span></span><span></span><span></span><span class="fab fa-twitter"></span></div>
+          <div class="text">Twitter</div>
+        </a>
+        <a href="https://linkedin.com/in/[your-username]" target="_blank">
+          <div class="layer"><span></span><span></span><span></span><span></span><span class="fab fa-linkedin-in"></span></div>
+          <div class="text">Linkedin</div>
+        </a>
+        <a href="https://github.com/[your-username]" target="_blank">
+          <div class="layer"><span></span><span></span><span></span><span></span><span class="fab fa-github"></span></div>
+          <div class="text">Github</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="site-footer">
+      <div class="copyright">
+        <p>© <span class="year"></span> [Your Name] — All rights reserved.</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://github.com/[your-username]" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/[your-username]" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/[your-username]" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/[your-username]" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <div class="cm-up">
+    <div class="cm-icon"><i class="fas fa-arrow-up"></i></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

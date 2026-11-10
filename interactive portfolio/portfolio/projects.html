@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — [Your Name] | Portfolio</title>
+  <meta name="description" content="Projects by [Your Name] — web apps, dashboards, games and more." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body class="light">
+
+  <div class="loading-pag">
+    <div class="loader">
+      <span>=[WORK]=></span>
+      <span>=[WORK]=></span>
+    </div>
+  </div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">=([Your<span>Name</span>])=&gt;</a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="nav-proj active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <button id="darkMode" aria-label="Toggle dark mode"><span><i class="fas fa-moon"></i><i class="fas fa-sun"></i></span></button>
+      <i class="fas fa-bars" id="menu-btn"></i>
+    </div>
+  </header>
+
+  <main class="service-page">
+    <!-- Slider (exact original swiper layout) -->
+    <section class="proyectos" id="proyectos">
+      <h2 class="heading">Featured <span style="color:var(--green)">Projects</span></h2>
+      <div class="proyect-site">
+        <div class="swiper proyectos-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-cart-shopping"></i></div>
+                <div class="content">
+                  <h3>E-Commerce Platform</h3>
+                  <p><span>▸</span> MERN store with cart, Stripe payments, reviews and an admin panel.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-react ic-react"></i>
+                    <i class="fab fa-node-js ic-node"></i>
+                    <i class="fas fa-leaf ic-mongo"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-chart-line"></i></div>
+                <div class="content">
+                  <h3>Analytics Dashboard</h3>
+                  <p><span>▸</span> Realtime SaaS dashboard with charts, filters and CSV export.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-react ic-react"></i>
+                    <i class="fab fa-js ic-js"></i>
+                    <i class="fas fa-database ic-mysql"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-comments"></i></div>
+                <div class="content">
+                  <h3>Chat Application</h3>
+                  <p><span>▸</span> Realtime chat with rooms, file sharing and online presence.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-react ic-react"></i>
+                    <i class="fab fa-node-js ic-node"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caja">
+                <div class="project-shot"><i class="fas fa-graduation-cap"></i></div>
+                <div class="content">
+                  <h3>LMS Platform</h3>
+                  <p><span>▸</span> Course platform with lessons, quizzes and certificates.</p>
+                  <div class="tecnologias">
+                    <i class="fab fa-react ic-react"></i>
+                    <i class="fab fa-node-js ic-node"></i>
+                    <i class="fab fa-laravel ic-laravel"></i>
+                  </div>
+                  <a href="#" class="btn-codigo custom-btn">Code</a>
+                  <a href="#" class="btn custom-btn">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid with modal (exact original mas-proyect layout) -->
+    <section class="mas-proyect">
+      <h2 class="heading">More <span style="color:var(--green)">Work</span></h2>
+      <div class="projects__grid">
+        <div class="projects__item" data-modal="modal-1">
+          <div class="project-shot shot-1"><i class="fas fa-burger"></i></div>
+        </div>
+        <div class="projects__item" data-modal="modal-2">
+          <div class="project-shot shot-2"><i class="fas fa-pen-nib"></i></div>
+        </div>
+        <div class="projects__item" data-modal="modal-3">
+          <div class="project-shot shot-3"><i class="fas fa-gamepad"></i></div>
+        </div>
+        <div class="projects__item" data-modal="modal-4">
+          <div class="project-shot shot-4"><i class="fas fa-brain"></i></div>
+        </div>
+        <div class="projects__item" data-modal="modal-5">
+          <div class="project-shot shot-5"><i class="fas fa-cloud-sun"></i></div>
+        </div>
+        <div class="projects__item" data-modal="modal-6">
+          <div class="project-shot shot-6"><i class="fas fa-list-check"></i></div>
+        </div>
+        <div class="projects__item" data-modal="modal-7">
+          <div class="project-shot shot-7"><i class="fas fa-music"></i></div>
+        </div>
+        <div class="projects__item" data-modal="modal-8">
+          <div class="project-shot shot-8"><i class="fas fa-camera"></i></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project modals (exact original overlay/contenedor-modal structure) -->
+  <div class="overlay">
+    <div class="contenedor-modal" id="modal-1" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-1"><i class="fas fa-burger"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Food Delivery App</b> — Restaurant aggregator with live order tracking, rider dashboard and customer app.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-react ic-react"></i>
+          <i class="fab fa-node-js ic-node"></i>
+          <i class="fas fa-database ic-mysql"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-modal" id="modal-2" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-2"><i class="fas fa-pen-nib"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Blog & CMS</b> — Headless CMS with markdown editor, draft scheduling and a public Next.js frontend.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-react ic-react"></i>
+          <i class="fab fa-node-js ic-node"></i>
+          <i class="fas fa-database ic-postgres"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-modal" id="modal-3" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-3"><i class="fas fa-gamepad"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Snake Game</b> — Classic snake with power-ups, levels and high score saving. Works on mobile too.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Play</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-js ic-js"></i>
+          <i class="fab fa-html5 ic-html"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-modal" id="modal-4" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-4"><i class="fas fa-brain"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Memory Match</b> — Flip-and-match memory game with themes, difficulty levels and a leaderboard.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Play</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-js ic-js"></i>
+          <i class="fab fa-css3-alt ic-css"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-modal" id="modal-5" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-5"><i class="fas fa-cloud-sun"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Weather App</b> — Forecast viewer with location search, 7-day view and animated conditions.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-js ic-js"></i>
+          <i class="fab fa-react ic-react"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-modal" id="modal-6" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-6"><i class="fas fa-list-check"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Task Manager</b> — Kanban boards, drag & drop, deadlines and team collaboration features.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-react ic-react"></i>
+          <i class="fab fa-node-js ic-node"></i>
+          <i class="fas fa-leaf ic-mongo"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-modal" id="modal-7" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-7"><i class="fas fa-music"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Music Player</b> — Playlist manager with audio visualiser, shuffle and queue controls.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-js ic-js"></i>
+          <i class="fab fa-html5 ic-html"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-modal" id="modal-8" style="display:none;">
+      <button class="boton-cerrar"><i class="fas fa-times"></i></button>
+      <div class="eins-modal-preview"><div class="project-shot shot-8"><i class="fas fa-camera"></i></div></div>
+      <div class="eins-modal-text">
+        <p><b>Gallery App</b> — Photo gallery with albums, lightbox view and lazy-loaded images.</p>
+        <p class="eins-modal-text-2">
+          Link: <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
+        </p>
+        <p class="eins-modal-text-3">Technologies:</p>
+        <div class="eins-modal-tec">
+          <i class="fab fa-react ic-react"></i>
+          <i class="fab fa-css3-alt ic-css"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="site-footer">
+      <div class="copyright">
+        <p>© <span class="year"></span> [Your Name] — All rights reserved.</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://github.com/[your-username]" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/[your-username]" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/[your-username]" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/[your-username]" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cm-up">
+    <div class="cm-icon"><i class="fas fa-arrow-up"></i></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

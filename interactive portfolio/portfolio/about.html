@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — [Your Name] | Portfolio</title>
+  <meta name="description" content="About [Your Name] — Full-Stack Developer. Skills, experience and bio." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body class="light">
+
+  <div class="loading-pag">
+    <div class="loader">
+      <span>=[ABOUT]=></span>
+      <span>=[ABOUT]=></span>
+    </div>
+  </div>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">=([Your<span>Name</span>])=&gt;</a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="nav-proj">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <button id="darkMode" aria-label="Toggle dark mode"><span><i class="fas fa-moon"></i><i class="fas fa-sun"></i></span></button>
+      <i class="fas fa-bars" id="menu-btn"></i>
+    </div>
+  </header>
+
+  <main>
+    <!-- About page (exact original sobre-mi-seccion layout) -->
+    <section class="sobre-mi-seccion">
+      <div class="sobre-mi-container">
+        <div class="sobre-mi-img-container">
+          <!-- Replace this placeholder with your photo:
+               <img class="sobre-mi-img" src="assets/your-photo.jpg" alt="Your Name"> -->
+          <div class="sobre-mi-img-placeholder">
+            <span class="initials">YN</span>
+            <small>your-photo.jpg (4:5 recommended)</small>
+          </div>
+          <a href="#" class="btn custom-btn cv" download>Download CV</a>
+        </div>
+
+        <div class="sobre-mi-info">
+          <h2 class="heading" style="margin-top:2rem;">About <span style="color:var(--green)">Me</span></h2>
+          <p>
+            Hi! I'm <strong>[Your Name]</strong>, a full-stack developer from [Your City, Country].
+            I love building things for the web — from clean, fast frontends to solid APIs and
+            databases behind them.
+          </p>
+          <p>
+            Replace this paragraph with your story: how you got into development, what you've
+            built so far, what you're learning now and what kind of work excites you. Write
+            like a human — this is the part clients and recruiters actually read.
+          </p>
+          <p class="hide">
+            Add a second paragraph if you like: your work style, industries you've served,
+            freelance vs full-time availability, or a fun fact about you.
+          </p>
+          <a href="#" class="buttonDownload btn-info" download>Download CV</a>
+
+          <div style="display:flex;gap:1.5rem;margin-top:2rem;">
+            <a href="contact.html" class="btn custom-btn">Contact Me</a>
+            <a href="projects.html" class="btn-codigo custom-btn">My Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills showcase (original skill page layout) -->
+    <section>
+      <h2 class="heading">My <span style="color:var(--green)">Skills</span></h2>
+      <div class="skill-container">
+        <div class="skill-card">
+          <i class="fab fa-react skills-img ic-react"></i>
+          <h3 class="skill-name">Front-End</h3>
+          <p class="skill-info">
+            HTML, CSS, JavaScript, Sass, Bootstrap, jQuery, React, TypeScript.
+            I build responsive, accessible interfaces with clean, maintainable code.
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node-js skills-img ic-node"></i>
+          <h3 class="skill-name">Back-End</h3>
+          <p class="skill-info">
+            NodeJs, Express, PHP, Laravel, MySQL, PostgreSQL, MongoDB.
+            APIs, auth, databases — everything an app needs behind the scenes.
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-figma skills-img ic-figma"></i>
+          <h3 class="skill-name">Tools</h3>
+          <p class="skill-info">
+            Figma, Photoshop, VS Code, Git. From design handoff to version control,
+            I work with a modern, professional workflow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info cards (original row/columns style) -->
+    <section>
+      <div class="row">
+        <div class="columns">
+          <h3>Profile</h3>
+          <h4>[Your Name]</h4>
+          <ul>
+            <li><p><span>Age:</span> [25]</p></li>
+            <li><p><span>Hobbies:</span> [Chess, Football and Programming]</p></li>
+            <li><p><span>Email:</span> [your-email]@gmail.com</p></li>
+            <li><p><span>City:</span> [Your City, Country]</p></li>
+          </ul>
+        </div>
+        <div class="columns">
+          <h3>Languages</h3>
+          <h4>I Speak</h4>
+          <ul>
+            <li><p><span>[English]:</span> [Professional]</p></li>
+            <li><p><span>[Hindi / Your Language]:</span> [Native]</p></li>
+          </ul>
+          <a href="contact.html" class="buttonDownload" download style="margin-top:2rem;">Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="site-footer">
+      <div class="copyright">
+        <p>© <span class="year"></span> [Your Name] — All rights reserved.</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://github.com/[your-username]" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/[your-username]" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/[your-username]" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/[your-username]" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cm-up">
+    <div class="cm-icon"><i class="fas fa-arrow-up"></i></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
